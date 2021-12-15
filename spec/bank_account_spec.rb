@@ -14,4 +14,6 @@ describe BankAccount do
     subject.deposit(10)
     expect(subject.withdraw(5)).to eq 5
   end
+
+  it { is_expected.to respond_to :balance }
 end
